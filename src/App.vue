@@ -9,11 +9,7 @@
                   @afterLeave="$collapse.afterEnter">
         <div v-show="show">
           <div class="demo-content">
-            <p>vue-collapse-transition</p>
-            <p>vue-collapse-transition</p>
-            <p>vue-collapse-transition</p>
-            <p>vue-collapse-transition</p>
-            <p>vue-collapse-transition</p>
+            vue collapse transition!
           </div>
         </div>
       </transition>
@@ -37,6 +33,12 @@ export default {
   *{
     padding: 0;
     margin: 0;
+  }
+  .demo-content {
+    width: 50px;
+    font-size: 18px;
+    white-space: pre-wrap;
+    word-break: break-all;
   }
 .collapse-transition {
   transition: 0.3s height ease-in-out, 0.3s padding-top ease-in-out, 0.3s padding-bottom ease-in-out;
